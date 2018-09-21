@@ -1,0 +1,7 @@
+<mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="item">
+  <mat-option *ngFor="let item of foods" [value]="item.value">
+    {{item.viewValue}}
+  </mat-option>
+</mat-select>
+
+<button mat-raised-button (click)="addItem()">Add item</button>
